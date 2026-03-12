@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Error - Criaturas</title>
+    <link rel="stylesheet" th:href="@{/estilos.css}">
+</head>
+
+<body>
+
+<header>
+    <h1>Criatura no encontrada</h1>
+</header>
+
+<div class="error-container">
+
+    <h2>⚠️ Algo ha salido mal</h2>
+
+    <p>
+        Parece que esta criatura se ha perdido en el multiverso...
+    </p>
+
+    <p class="error-code">
+        Código de error: <span th:text="${status}">500</span>
+    </p>
+
+    <a th:href="@{/criaturas}" class="btn-volver">Volver al listado</a>
+
+</div>
+
+</body>
+</html>

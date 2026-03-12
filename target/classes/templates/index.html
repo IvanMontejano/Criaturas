@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>API Criaturas</title>
+</head>
+<body>
+
+<h1>Endpoints disponibles</h1>
+
+<ul>
+    <li th:each="e : ${endpoints}">
+        <a th:href="${e}" th:text="${e}"></a>
+    </li>
+</ul>
+
+</body>
+</html>
